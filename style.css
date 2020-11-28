@@ -1,0 +1,84 @@
+:root {
+  --rounding-table: 10px;
+  --gray-for-thead: #7887ab;
+  --dlblue-for-thead:  #4f628e;
+  --lhgblue-for-thead: #2e4172;
+  --mnblue-for-thead: #162955;
+  --darkblue-for-thead: #061539;
+  --table-color-1: rgb(219,219,219);
+  --table-color-2: rgb(233,233,233);
+  --table-color-3: white;
+}
+
+table{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 60%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+tr td{
+  background-color:  gainsboro;
+}
+
+thead td{
+  color: white;
+  font-weight:bold;
+  font-size: 1.2em;
+}
+thead td:first-child {
+  border-top-left-radius: var(--rounding-table);
+}
+
+thead td:last-child{
+  border-top-right-radius: var(--rounding-table) ;
+}
+
+
+tfoot td:first-child{
+  border-bottom-left-radius: var(--rounding-table) ;
+}
+
+tfoot td:last-child{
+  border-bottom-right-radius: var(--rounding-table) ;
+}
+
+button{
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+tr > td:first-child{
+  padding-left: 30px;
+  text-align: left;
+}
+
+td{
+  padding: 7px;
+  border: 0px solid;
+}
+
+span{
+  font-size: 2em;
+}
+
+tr:nth-child(odd) > td:nth-child(odd){
+  background-color: var(--table-color-1);
+}
+
+tr:nth-child(odd) > td:nth-child(even)
+{
+  background-color: var(--table-color-2);
+}
+
+tr:nth-child(even) > td:nth-child(odd)
+{
+  background-color: var(--table-color-2);
+}
+
+tr:nth-child(even) > td:nth-child(even)
+{
+  background-color: var(--table-color-3);
+}
